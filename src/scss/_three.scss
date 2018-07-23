@@ -1,0 +1,50 @@
+#three {
+    padding: 0 5%;
+    display: flex;
+    background: rgba(206, 206, 206, 0.205);
+    .flex-parent {
+        display: flex;
+    }
+    .three-content {
+        padding: 5rem 0;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1 {
+            width: 80%;
+        }
+        p {
+            font-size: 1.2rem;
+            color: $gray;
+            width: 80%;
+            margin: 2rem 0 ;
+        }
+
+
+    }
+    .btn-box {
+        width: 50%;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 768px){
+    .flex-parent{
+       flex-direction: column;
+       text-align: center;
+    }
+    #three .three-content h1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #three .btn-box{
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: -114px;
+   }
+}

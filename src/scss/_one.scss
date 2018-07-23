@@ -1,0 +1,166 @@
+
+#one {
+    background-image: url(https://images.pexels.com/photos/360013/pexels-photo-360013.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    min-height: 800px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    header {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(4, 5, 5, 0.5);
+    }
+    // desltop navigation style
+    .desktop {
+        ul {
+            display: flex;
+            height: 5rem;
+            align-items: center;
+            li{
+                margin-right: 2rem;
+            }
+            a{
+                font-size: 20px;
+                text-transform: uppercase;
+                padding-bottom: 26px;
+
+            }
+            a:hover {
+                border-bottom: 3px solid red;
+
+            }
+            // logo styles
+            #logo {
+                margin-right: auto;
+                letter-spacing: 2px;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    //mobile - style
+
+    .mobile-nav-wrapper {
+        display: none;
+    }
+
+
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(219, 207, 207, 0.144), rgba(185, 185, 185, 0.75), rgba(0, 0, 0, 0));
+    }
+
+// header content -starts here 
+.header-content-wrapper {
+    display: flex;
+    margin-top: 4rem;
+    .header-content {
+        width: 50%;
+        
+        h1 {
+            font-size: 3.8rem;
+            color: $white;
+            margin: 8rem 0 1rem 0 ;
+            line-height: 1;
+        }
+        p {
+            color: $gray;
+            font-size: 1.2rem;
+            width: 70%;
+        }
+    }
+    .header-youtube {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fa-play-circle {
+            color: $white;
+            font-size: 4rem;
+            opacity: 0.31;
+        }
+    }
+}
+
+
+// media screen for smaller desktop or laptop
+    @media(max-width: 980px) {
+        .wrapper {
+        width:960px;
+        margin: 0 auto;
+        padding: 0 5%;
+
+
+        }
+    }
+
+// media screen for phone
+    @media(max-width: 768px) {
+        .wrapper {
+            width: 100%;
+            padding: 0 5%;
+            margin: 0 auto;
+        }
+        .desktop {
+            display: none;
+            
+        }
+        .header-content-wrapper{  
+          .header-content {
+                margin-top: -4rem;
+                width:100%;
+                text-align: center;
+                height: 100%;
+                display: inline-block;
+                h1 {
+                    font-size: 3rem;
+                    width: 90%;
+                    margin: 10rem auto 0 auto;
+                    padding-bottom: 1.5rem;
+                    
+                }
+                P{
+                    margin: 0 auto;
+                }            
+            }
+           .header-youtube {
+               display: none;
+           }
+
+        }
+        .mobile-nav-wrapper {
+            display: block;
+            #logo-hamburger-wrapper {
+                display: flex;
+                height: 100px;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.5rem;
+            }
+                
+            #mobile-nav {
+                display: none;
+                a {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    width: 100%;
+                    display: inline-block;  
+                    line-height: 1.9rem;
+                    margin: 1rem 0;
+                  }
+                  a:hover {
+                      color: rgba(197, 197, 197, 0.781);
+                  }
+            }
+        }    
+     } // media screen ends here 
+
+}

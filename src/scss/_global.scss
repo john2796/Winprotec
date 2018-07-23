@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text:500,700');
+$red: #c90039;
+$white: #e5e5e5;
+$gray: #858282;
+$black:#191919;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    font-family: 'Markazi Text', serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+ul,
+li,
+a,
+    {
+    text-decoration: none;
+    color: $white;
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 3.8rem;
+    color: $black; // margin: 8rem 0 1rem 0 ;
+}
+
+p {
+    color: $gray;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+//for alltext with red color
+.red {
+    color: $red;
+}
+
+button {
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: $red;
+    color: $white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+
+}
+button:active {
+	position:relative;
+    top:3px;
+}
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px;
+    
+}
+
+// toggle style
+img {
+    max-width: 400px;
+    width: 60%;
+    display: block;
+}

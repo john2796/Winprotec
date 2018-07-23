@@ -1,0 +1,47 @@
+#seven {
+    .contact-info {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 9rem;
+       
+        h3 {
+            color: $black;  
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+#footer {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+
+}
+#horizontal {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(83, 81, 81, 0.13), rgba(94, 93, 93, 0.164), rgba(0, 0, 0, 0));  
+    margin: 2rem 0;
+  }
+
+  @media(max-width: 650px){
+    
+      .contact-info {
+          flex-wrap: wrap;
+        //   width: 18rem;
+          text-align: center;
+          justify-content: space-between;
+          margin: 0 auto;
+         ul{
+            padding: 2rem 1rem;
+         }
+          h3, p {
+            font-size: 1.3rem;
+        } 
+      }
+      #footer {
+          flex-wrap: wrap;
+      }
+  }
