@@ -467,7 +467,8 @@ img {
   height: 40px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 1rem; }
 
 #horizontal {
   border: 0;
